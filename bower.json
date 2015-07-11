@@ -1,13 +1,20 @@
 {
   "name": "sk-angular-gulp-sass",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Starting point for a project with Angular, Gulp and Bootstrap (SASS)",
-  "authors": [
+  "keywords": [
+      "angular",
+      "bootstrap",
+      "gulp",
+      "sass",
+      "scss"
+  ],
+  "author": [
     "Juan Cruz Llorens"
   ],
-  "license": "MIT",  
-  "private": true,
+  "license": "MIT",    
   "homepage": "https://github.com/IberaSoft/sk-angular-gulp-sass",
+  "bugs": "https://github.com/IberaSoft/sk-angular-gulp-sass/issues",
   "ignore": [
     "**/.*",
     "node_modules",
