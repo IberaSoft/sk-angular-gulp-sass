@@ -263,3 +263,8 @@ crashlytics-build.properties
 
 # sftp configuration file
 sftp-config.json
+
+### Other Folders ###
+dist/
+node_modules/
+vendor/
