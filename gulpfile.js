@@ -6,14 +6,27 @@
     /**
      * Tasks dependencies
      ---------------------------------------------------*/
-    sass    = require('gulp-sass'),
-    concat  = require('gulp-concat'),
-    rename  = require('gulp-rename'),
-    cssmin  = require('gulp-minify-css'),
-    csslint = require('gulp-csslint'),
-    prefix  = require('gulp-autoprefixer'),
-    jshint  = require('gulp-jshint'),
-    uglify  = require('gulp-uglify');
+    addsrc      = require('gulp-add-src'),
+    argv        = require('yargs').argv,
+    batch       = require('gulp-batch'),
+    concat      = require('gulp-concat'),
+    connect     = require('gulp-connect'),
+    csslint     = require('gulp-csslint'),
+    cssmin      = require('gulp-minify-css'),
+    debug       = require('gulp-debug'),
+    del         = require('del'),
+    gulpif      = require('gulp-if'),
+    htmlminify  = require('gulp-minify-html'),
+    htmlreplace = require('gulp-html-replace'),
+    imagemin    = require('gulp-imagemin'),
+    jshint      = require('gulp-jshint'),
+    livereload  = require('gulp-livereload'),
+    ngAnnotate  = require('gulp-ng-annotate'),
+    prefix      = require('gulp-autoprefixer'),
+    rename      = require('gulp-rename'),
+    sass        = require('gulp-sass'),
+    uglify      = require('gulp-uglify'),
+    watch       = require('gulp-watch');
 
     gulp.task('scss', function() {
         return gulp.src('src/theme/scss/main.scss')
