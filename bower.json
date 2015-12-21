@@ -1,17 +1,14 @@
 {
   "name": "sk-angular-gulp-sass",
   "version": "0.0.1",
-  "description": "Starting point for a project with Angular, Gulp and Bootstrap (SASS)",
-  "author": "Juan Cruz Llorens",
-  "license": "MIT",
-  "keywords": [
-    "angular",
-    "bootstrap",
-    "gulp",
-    "sass",
-    "scss",
-    "skeleton"
-  ],
+  "description": "Starting point for a project with Angular, Gulp and SASS",
+  "author": "Your Name <you.name@example.org>",
+  "contributors": [{
+    "name": "",
+    "email": ""
+  }],
+  "bin": {},
+  "homepage": "https://github.com/IberaSoft/sk-angular-gulp-sass",
   "repository": {
     "type": "git",
     "url": "https://github.com/IberaSoft/sk-angular-gulp-sass"
@@ -19,16 +16,25 @@
   "bugs": {
     "url": "https://github.com/IberaSoft/sk-angular-gulp-sass/issues"
   },
-  "homepage": "https://github.com/IberaSoft/sk-angular-gulp-sass",
+  "keywords": [
+    "angular",
+    "gulp",
+    "sass",
+    "skeleton"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-ui-router": "*",
+    "lodash": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
-    "vendor"
+    "vendor",
+    "test"
   ],
-  "dependencies": {
-    "angular": "~1.4.1",
-    "angular-mocks": "~1.4.1",
-    "angular-ui-router": "~0.2.15",
-    "bootstrap-only-sass": "*"
-  }
+  "license": "MIT"
 }
