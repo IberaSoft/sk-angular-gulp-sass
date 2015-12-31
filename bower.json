@@ -2,11 +2,13 @@
   "name": "sk-angular-gulp-sass",
   "version": "0.0.1",
   "description": "Starting point for a project with Angular, Gulp and SASS",
-  "author": "Your Name <you.name@example.org>",
-  "contributors": [{
-    "name": "",
-    "email": ""
-  }],
+  "author": "Your Name <your.name@example.org>",
+  "contributors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
   "bin": {},
   "homepage": "https://github.com/IberaSoft/sk-angular-gulp-sass",
   "repository": {
@@ -23,13 +25,11 @@
     "skeleton"
   ],
   "dependencies": {
-    "angular": "*",
-    "angular-ui-router": "*",
-    "lodash": "*"
+    "angular": "~1.4.7",
+    "angular-ui-router": "ui-route#~0.2.15",
+    "normalize-css": "normalize.css#~3.0.3"
   },
-  "devDependencies": {
-    "angular-mocks": "*"
-  },
+  "devDependencies": {},
   "ignore": [
     "**/.*",
     "node_modules",

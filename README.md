@@ -2,7 +2,7 @@
 
 This is a skeleton application for a project using HTML5, AngularJS, Gulp and SASS.
 
-The main code is developed to ECMAScript 6 standards and transpiled using Babel.
+The main code is developed with the ECMAScript 6 standards and transpiled using Babel.
 
 [![Build Status](https://travis-ci.org/IberaSoft/sk-angular-gulp-sass.svg?branch=master)](https://travis-ci.org/IberaSoft/sk-angular-gulp-sass)
 [![GitHub issues](https://img.shields.io/github/issues/IberaSoft/sk-angular-gulp-sass.svg)](https://github.com/IberaSoft/sk-angular-gulp-sass/issues)
@@ -10,11 +10,8 @@ The main code is developed to ECMAScript 6 standards and transpiled using Babel.
 
 ## Prerequisites
 
-- [Java](https://www.java.com/en/download/) v1.8.0 or greater is installed, and is available on the PATH environment variable.
+- [NodeJS](https://nodejs.org/en/download/) v4.2.4 or greater is installed, and `node` and `npm` are available on the PATH environment variable.
 - [Git](https://git-scm.com/) v2.6.4 or greater is installed, and is available on the PATH environment variable.
-- [NodeJS](https://nodejs.org/en/download/) v5.3.0 or greater is installed, and `node` and `npm` are available on the PATH environment variable. (Note: Python 2.6 or 2.7 is required to build from source tarballs.)
-- Gulp is installed globally `npm i gulp -g`. Check the [official documentation](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
-- Add the following entry to your host file: `127.0.0.1 local.myapp.com`
 
 ## Quick Start
 
@@ -31,8 +28,32 @@ cd sk-angular-gulp-sass
 rm -rf .git
 ```
 
-3- Install all of the node dependencies required by the project. (Note: Some npm plugins need node-gyp to be installed. To avoid errors please check the documentation.)
+3- Install all of the node dependencies and bower packages required by the project. (Note: Some npm plugins need node-gyp to be installed. To avoid errors please check the documentation.)
 
 ```
 npm i
 ```
+
+
+## Gulp Tasks
+
+- `gulp`
+
+    Run all tasks and launch the browser.
+
+- `gulp clean`
+
+    Remove all files from the build folder.
+
+- `gulp styles`
+
+    Compile less files to CSS, add vendor prefixes, and copy to the build folder
+
+- `gulp build`
+
+    Optimize all assets, scripts, styles, etc to build the production code.
+    
+    
+## License
+
+The code is available under the [MIT license](LICENSE).

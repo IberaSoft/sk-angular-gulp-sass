@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title ng-bind="'MyApp - ' + $root.title">MyApp - Welcome</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <base href="/">
+
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body ng-controller="AppController as app">
+    <header ng-include="'layout/header.tpl.html'"></header>
+    <section ui-view></section>
+    <footer ng-include="'layout/footer.tpl.html'"></footer>
+
+    <!-- Script Includes -->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js">
+
+    </script>
+    <script src="layout/layout.js"></script>
+
+    <!-- build:browsersync -->
+    <script type='text/javascript' id="__bs_script__">
+        //<![CDATA[
+        document.write('<script async src="http://HOST:3003/browser-sync/browser-sync-client.js"><\/script>'.replace('HOST', location.hostname));
+        //]]>
+    </script>
+    <!-- endbuild -->
+</body>
+</html>
